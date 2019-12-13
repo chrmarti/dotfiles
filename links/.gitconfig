@@ -1,0 +1,10 @@
+[user]
+	name = Christof Marti
+	email = chrmarti@microsoft.com
+[core]
+	editor = code-insiders -r --wait
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	process = git-lfs filter-process
