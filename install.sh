@@ -10,3 +10,5 @@ do
 		ln -s `basename $FOLDER`/links/$f `dirname $FOLDER`/$f
 	fi
 done
+
+echo REMOTE_CONTAINERS: $REMOTE_CONTAINERS
