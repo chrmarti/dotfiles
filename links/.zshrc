@@ -15,6 +15,9 @@ unsetopt share_history
 
 RPROMPT='%{$fg[red]%}${DOCKER_MACHINE_NAME}%{$reset_color%} %{$fg[green]%}$(nvm_prompt_info)%{$reset_color%}'
 
-export NVM_DIR="/Users/chrmarti/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-export PATH=/Users/chrmarti/bin:/Users/chrmarti/anaconda/bin:/opt/local/bin:$PATH
+
+export PATH="$HOME/bin:$PATH"
+
+export GPG_TTY=`tty`
